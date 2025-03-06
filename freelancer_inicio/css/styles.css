@@ -41,6 +41,28 @@ h1, h2, h3{
     margin: 0 auto;
 }
 
+.boton{
+    display: block;
+    text-align: center;
+    padding: 1rem 3rem;
+    background-color: var(--secundario);
+    color: var(--oscuro);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    width: 90%;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px){
+    .boton{
+        width: auto;
+    }   
+}
+
 .nav-bg {
     background-color: var(--secundario);
 }
@@ -75,7 +97,7 @@ h1, h2, h3{
     background-image: url(../img/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 450px;
+    height: 380px;
     position: relative;
 }
 
@@ -95,4 +117,8 @@ h1, h2, h3{
 .contenido_hero p {
     color: var(--blanco);
 
+}
+.hero-img{
+    display:  flex;
+    align-items: flex-end;
 }
