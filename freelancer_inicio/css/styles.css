@@ -18,12 +18,18 @@ body{
     font-size: 16px; /* 1rem = 10px */
     font-family: "Krub", sans-serif;
 }
+h1 {
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 1.8rem;
+}
 
-.titulo {
+h1, h2, h3{
     text-align: center;
-    font-size: 3.8rem; 
-    color: var(--oscuro);
-    margin-bottom: 2rem;
 }
 
 .titulo span {
@@ -76,10 +82,17 @@ body{
 .contenido_hero{
     background-color: rgba(0,0,0,.7);  /* Anterior*/
     background-color: rgb(0 0 0 / 70%); 
-    color: var(--blanco);
     position: absolute;
     width: 100%;
     height: 100%;
-    transform: translate(0%, -0%);
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+
+.contenido_hero h2,
+.contenido_hero p {
+    color: var(--blanco);
+
 }
