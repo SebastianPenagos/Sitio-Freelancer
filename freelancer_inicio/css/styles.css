@@ -12,6 +12,14 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box; /*Para que el padding y margin no afecten el tamaño de los elementos*/
+    scroll-snap-type: y mandatory; /*Para que el scroll sea vertical*/
+}
+/*Scroll Snap*/
+.servicios, 
+.navegacion-principal,
+.formulario {
+    scroll-snap-align: center; /*Para que el scroll se ponga en el centro*/
+    scroll-snap-stop: always; /*Para que el scroll se detenga en cada sección*/
 }
 
 *,
