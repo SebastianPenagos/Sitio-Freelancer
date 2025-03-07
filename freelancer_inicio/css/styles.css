@@ -4,6 +4,7 @@
     --primario: #ffc101;
     --secundario: #0097a7;
     --terciario: #757575;
+    --grisClaro: #DFE9F3;
 }
 /*Globales*/
 html{
@@ -17,6 +18,7 @@ html{
 body{
     font-size: 16px; /* 1rem = 10px */
     font-family: "Krub", sans-serif; /*Fuente de Google Fonts*/
+    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%); /*Gradiente de colores*/
 }
 
 .contenedor { /*Para centrar el contenido*/
