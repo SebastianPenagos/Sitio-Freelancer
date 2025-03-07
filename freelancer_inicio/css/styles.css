@@ -35,7 +35,7 @@ body {
 
 .contenedor { /*Para centrar el contenido*/
     max-width: 120rem;
-    margin: 1rem auto; /*Arriba y abajo 1rem, izquierda y derecha auto*/
+    margin: 0 auto; /*Arriba y abajo 0, izquierda y derecha auto*/
 }
 
 .boton {
