@@ -1,4 +1,5 @@
-:root{ /*Variables de CSS*/
+:root {
+    /*Variables de CSS*/
     --blanco: #fff;
     --oscuro: #212121;
     --primario: #ffc101;
@@ -6,16 +7,27 @@
     --terciario: #757575;
     --grisClaro: #DFE9F3;
 }
+
 /*Globales*/
-html{
+html {
     font-size: 62.5%;
     box-sizing: border-box; /*Para que el padding y margin no afecten el tamaño de los elementos*/
 }
-*, *:before, *:after{ /*Para que el box-sizing afecte a todos los elementos*/
+
+*,
+*:before,
+*:after { /*Para que el box-sizing afecte a todos los elementos*/
     box-sizing: inherit;
 }
 
-body{
+.sombra {
+    box-shadow: 0px 5px 15px 0px rgba(66, 66, 66, 0.72);
+    background-color: var(--blanco);
+    padding: 2rem; /*Arriba y abajo 2rem, izquierda y derecha 2rem*/
+    border-radius: 2rem;
+}
+
+body {
     font-size: 16px; /* 1rem = 10px */
     font-family: "Krub", sans-serif; /*Fuente de Google Fonts*/
     background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100%); /*Gradiente de colores*/
@@ -23,7 +35,7 @@ body{
 
 .contenedor { /*Para centrar el contenido*/
     max-width: 120rem;
-    margin: 0 auto;
+    margin: 1rem auto; /*Arriba y abajo 1rem, izquierda y derecha auto*/
 }
 
 .boton {
@@ -42,7 +54,9 @@ body{
     text-align: center;
 }
 
-@media screen and (min-width: 768px) { /*Media query para pantallas de 768px o más*/
+@media screen and (min-width: 768px) {
+
+    /*Media query para pantallas de 768px o más*/
     .boton {
         width: auto;
     }
@@ -52,16 +66,21 @@ body{
 h1 {
     font-size: 3.8rem;
 }
-h2{
+
+h2 {
     font-size: 2.8rem;
 }
-h3{
+
+h3 {
     font-size: 1.8rem;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     text-align: center;
 }
+
 /*Header*/
 .titulo span {
     font-size: 2rem;
@@ -72,28 +91,29 @@ h1, h2, h3{
     background-color: var(--secundario);
 }
 
-.navegacion-principal{
+.navegacion-principal {
     display: flex;
     flex-direction: column;
 }
-@media (min-width: 768px){
-    .navegacion-principal{
+
+@media (min-width: 768px) {
+    .navegacion-principal {
         flex-direction: row; /*Para que los elementos se pongan en fila*/
         justify-content: space-between; /*Para que los elementos se separen*/
     }
 }
 
-.navegacion-principal a{
+.navegacion-principal a {
     display: block;
     text-align: center;
     padding: 1rem;
-    color : var(--blanco);
+    color: var(--blanco);
     text-decoration: none;
-    font-size: 2rem; 
+    font-size: 2rem;
     font-weight: 700;
 }
 
-.navegacion-principal a:hover{
+.navegacion-principal a:hover {
     background-color: var(--primario);
     color: var(--oscuro);
 }
@@ -104,17 +124,18 @@ h1, h2, h3{
     background-size: cover;
     height: 380px;
     position: relative; /*Para que el contenido se ponga encima de la imagen*/
+    margin-bottom: 2rem;
 }
 
-.contenido_hero{
-    background-color: rgba(0,0,0,.7);  /* Anterior*/
-    background-color: rgb(0 0 0 / 70%); 
+.contenido_hero {
+    background-color: rgba(0, 0, 0, .7); /* Anterior*/
+    background-color: rgb(0 0 0 / 70%);
     position: absolute; /*Para que el contenido se ponga encima de la imagen*/
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
 }
 
@@ -123,7 +144,8 @@ h1, h2, h3{
     color: var(--blanco);
 
 }
-.contenido_hero .hero-img{
-    display:  flex;
+
+.contenido_hero .hero-img {
+    display: flex;
     align-items: flex-end;
 }
